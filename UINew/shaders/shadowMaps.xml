@@ -1,0 +1,17 @@
+<vertexShader  zIndex="10">
+    <uniforms>
+        <uniform prefix="highp" name="lightProjModelView"/>
+    </uniforms>
+    <attributes>
+        <attribute prefix="highp" name="a_position" localVar="true"/>
+    </attributes>
+    <code>
+        position = lightProjModelView*position;
+    </code>
+</vertexShader>
+<fragmentShader  zIndex="0">
+    <code>
+        color     = vec4(gl_FragCoord.z);
+    </code>
+</fragmentShader>
+

@@ -1,0 +1,16 @@
+<vertexShader zIndex="5">
+    <uniforms>
+        <uniform prefix="highp" name="colorMaterial"/>
+    </uniforms>
+    <varyings>
+        <varying prefix="highp" type="vec3" name="v_color"/>
+    </varyings>
+    <code>
+        v_color = colorMaterial;
+    </code>
+</vertexShader>
+<fragmentShader zIndex="100">
+    <code>
+        color = vec4(v_color,1.0);
+    </code>
+</fragmentShader>

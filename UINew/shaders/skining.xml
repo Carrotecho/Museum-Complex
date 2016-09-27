@@ -1,0 +1,92 @@
+<vertexShader zIndex="0">
+    <uniforms>
+        <uniform prefix="highp" name="bonesTranslations"/>
+        <uniform prefix="highp" name="bonesRotations"/>
+    </uniforms>
+    <attributes>
+        <attribute prefix="highp" name="a_position" localVar="true"/>
+        <attribute prefix="highp" name="a_normal" localVar="true"/>
+        <attribute prefix="highp" name="a_boneweights" />
+        <attribute prefix="highp" name="a_boneids" />
+    </attributes>
+    <functions>
+      highp vec3 VertexTransform(highp vec3 p, int index)
+      {
+  
+          highp vec4 quat = bonesRotations[index];
+          highp vec3 pos  = bonesTranslations[index].xyz;
+
+          highp float x = quat.x;
+          highp float y = quat.y;
+          highp float z = quat.z;
+          highp float w = quat.w;
+
+          highp float tx = pos.x;
+          highp float ty = pos.y;
+          highp float tz = pos.z;
+
+          highp float xxzz = x*x - z*z;
+          highp float wwyy = w*w - y*y;
+          highp float xw2 = x*w*2.0;
+          highp float xy2 = x*y*2.0;
+          highp float xz2 = x*z*2.0;
+          highp float yw2 = y*w*2.0;
+          highp float yz2 = y*z*2.0;
+          highp float zw2 = z*w*2.0;
+          highp vec3 ret = vec3((xxzz + wwyy)*p.x + (xy2 + zw2)*p.y       + (xz2 - yw2)*p.z,
+                                (xy2 - zw2)*p.x   + (y*y+w*w-x*x-z*z)*p.y + (yz2 + xw2)*p.z,
+                                (xz2 + yw2)*p.x   + (yz2 - xw2)*p.y       + (wwyy - xxzz)*p.z);
+          return ret + vec3(tx, ty, tz);
+      }
+
+      highp vec3 NormalsTransform(highp vec3 p, int index)
+      {
+ 
+          highp vec4 quat = bonesRotations[index];
+          highp vec3 pos  = vec3(0.0,0.0,0.0);
+
+          highp float x = quat.x;
+          highp float y = quat.y;
+          highp float z = quat.z;
+          highp float w = quat.w;
+
+          highp float tx = pos.x;
+          highp float ty = pos.y;
+          highp float tz = pos.z;
+
+          highp float xxzz = x*x - z*z;
+          highp float wwyy = w*w - y*y;
+          highp float xw2 = x*w*2.0;
+          highp float xy2 = x*y*2.0;
+          highp float xz2 = x*z*2.0;
+          highp float yw2 = y*w*2.0;
+          highp float yz2 = y*z*2.0;
+          highp float zw2 = z*w*2.0;
+          highp vec3 ret = vec3((xxzz + wwyy)*p.x + (xy2 + zw2)*p.y       + (xz2 - yw2)*p.z,
+                                (xy2 - zw2)*p.x   + (y*y+w*w-x*x-z*z)*p.y + (yz2 + xw2)*p.z,
+                                (xz2 + yw2)*p.x   + (yz2 - xw2)*p.y       + (wwyy - xxzz)*p.z);
+          return ret + vec3(tx, ty, tz);
+      }
+
+    </functions>
+    <varyings>
+        <varying prefix="highp" type="vec3" name="skinned_v"/>
+    </varyings>
+    <code>
+        
+        
+      position = vec4(VertexTransform(position.xyz, int(a_boneids.x)) * a_boneweights.x+
+                      VertexTransform(position.xyz, int(a_boneids.y)) * a_boneweights.y+
+                      VertexTransform(position.xyz, int(a_boneids.z)) * a_boneweights.z+
+                      VertexTransform(position.xyz, int(a_boneids.w)) * a_boneweights.w,1.0);
+
+      normal   = NormalsTransform(normal.xyz, int(a_boneids.x)) * a_boneweights.x+
+                 NormalsTransform(normal.xyz, int(a_boneids.y)) * a_boneweights.y+
+                 NormalsTransform(normal.xyz, int(a_boneids.z)) * a_boneweights.z+
+                 NormalsTransform(normal.xyz, int(a_boneids.w)) * a_boneweights.w;
+
+    </code>
+</vertexShader>
+
+
+

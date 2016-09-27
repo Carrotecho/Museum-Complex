@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<attributes>
+    <a_position 
+               id                = "1"
+               bindName          = "a_position"
+               var               = "vec3"
+               localName         = "position"
+               localVar          = "vec4"
+               localCode         = "position = vec4(a_position,1.0);"
+               normalized        = "0"
+    />
+    <a_normal 
+               id                = "2"
+               bindName          = "a_normal"
+               var               = "vec3"
+               localName         = "normal"
+               normalized        = "0"
+    />
+    <a_textureCoordinats1 
+               id                = "5"
+               bindName          = "a_textureCoordinats1"
+               var               = "vec2"
+               localName         = "textureCoordinats1"
+               normalized        = "0"
+    />
+    <a_farCorners 
+               id                = "9"
+               bindName          = "a_farCorners"
+               var               = "vec3"
+               normalized        = "0"
+    />
+    <a_color
+               id                = "6"
+               bindName          = "a_color"
+               var               = "vec3"
+               normalized        = "0"
+    />
+    
+    <a_boneweights
+               id                = "10"
+               bindName          = "a_boneweights"
+               var               = "vec4"
+               normalized        = "0"
+    />
+    <a_boneids
+               id                = "11"
+               bindName          = "a_boneids"
+               var               = "vec4"
+               normalized        = "0"
+    />
+    <a_4color
+               id                = "12"
+               bindName          = "a_4color"
+               var               = "vec4"
+               normalized        = "0"
+    />
+    <a_particle_data
+               id                = "13"
+               bindName          = "a_particle_data"
+               var               = "vec4"
+               normalized        = "0"
+    />
+</attributes>
+
+
+<uniforms>
+    <perspectiveMatrix      id="1"  var="mat4"            />
+    <cameraViewMatrix       id="2"  var="mat4"            />
+    <worldObjectMatrix      id="3"  var="mat4"            />
+    <farPlane               id="4"  var="float"           />
+    <modelNormalMatrix      id="5"  var="mat3"            />
+    <cameraViewInverse3x3   id="6"  var="mat3"            />
+    <cameraPosition         id="7"  var="vec3"            />
+    <lightPosition          id="8"  var="vec3"            />
+    <depthTexture           id="9"  var="sampler2D"       />
+    <lightTexture           id="10" var="sampler2D"       />
+    <diffuseTexture         id="11" var="sampler2D"       />
+    <projViewInverse        id="12" var="mat4"            />
+    <normalMaterialTexture  id="13" var="sampler2D"       />
+    <albedoTexture          id="14" var="sampler2D"       />
+    <perspectiveLightMatrix id="15" var="mat4"            />
+    <lightViewMatrix        id="16" var="mat4"            />
+    <shadowMaps             id="17" var="sampler2D"       />
+    <lightProjModelView     id="18" var="mat4"            />
+    <lightProjModelViewST   id="19" var="mat4"            />
+    <projCameraModelView    id="20" var="mat4"            />
+    <bonesTranslations      id="21" var="vec3" size="80"  />
+    <bonesRotations         id="22" var="vec4" size="80"  />
+    <normalMap              id="23" var="sampler2D"       />
+    <specularMap            id="24" var="sampler2D"       />
+    <indexMesh              id="25" var="float"           />
+    <colorMaterial          id="26" var="vec3"            />
+    <cameraRightWS          id="27" var="vec3"            />
+    <cameraUpWS             id="28" var="vec3"            />
+    <specularPower          id="29" var="float"           />
+</uniforms>
+
+

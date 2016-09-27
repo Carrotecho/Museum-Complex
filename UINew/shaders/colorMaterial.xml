@@ -1,0 +1,16 @@
+<vertexShader zIndex="5">
+    <attributes>
+        <attribute prefix="highp" name="a_color" />
+    </attributes>
+    <varyings>
+        <varying prefix="highp" type="vec3" name="v_color"/>
+    </varyings>
+    <code>
+        v_color = a_color;
+    </code>
+</vertexShader>
+<fragmentShader zIndex="0">
+    <code>
+            color = vec4(v_color,1.0);
+    </code>
+</fragmentShader>

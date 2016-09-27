@@ -1,0 +1,29 @@
+<vertexShader zIndex="5">
+    <uniforms>
+        <uniform prefix="highp" name="cameraRightWS"/>
+        <uniform prefix="highp" name="cameraUpWS"/>
+    </uniforms>
+    
+    <attributes>
+        <attribute prefix="highp" name="a_textureCoordinats1" />
+        <attribute prefix="highp" name="a_4color" />
+        <attribute prefix="highp" name="a_particle_data" />
+    </attributes>
+    <varyings>
+        <varying prefix="highp" type="vec2" name="textureCoordinats1"/>
+        <varying prefix="highp" type="vec4" name="v_a_color"/>
+    </varyings>
+    <code>
+        position = vec4(position.xyz + cameraRightWS * a_particle_data.x * a_particle_data.z + cameraUpWS * a_particle_data.y * a_particle_data.w,1.0);
+        v_a_color = a_4color;
+        textureCoordinats1 = a_textureCoordinats1;
+    </code>
+</vertexShader>
+<fragmentShader zIndex="0">
+    <uniforms>
+        <uniform name="diffuseTexture"/>
+    </uniforms>
+    <code>
+        color = ((v_a_color * texture2D (diffuseTexture, textureCoordinats1.xy)) * v_a_color.w);
+    </code>
+</fragmentShader>

@@ -1,0 +1,46 @@
+<vertexShader zIndex="1">
+    <uniforms>
+        <uniform prefix="highp" name="perspectiveMatrix"/>
+        <uniform prefix="highp" name="cameraViewMatrix"/>
+        <uniform prefix="highp" name="lightPosition"/>
+        <uniform prefix="highp" name="worldObjectMatrix"/>
+        <uniform prefix="highp" name="modelNormalMatrix"/>
+        <uniform prefix="highp" name="lightProjModelViewST"/>
+    </uniforms>
+    <attributes>
+        <attribute prefix="highp" name="a_normal" localVar="true"/>
+        <attribute prefix="highp" name="a_position" localVar="true"/>
+    </attributes>
+    <varyings>
+        <varying prefix="highp" type="vec3" name="normal_v"/>
+        <varying prefix="highp" type="vec3" name="lightPosition_v"/>
+        <varying prefix="highp" type="vec4" name="lpos_v"/>
+        
+    </varyings>
+    <code>
+        lightPosition_v  = normalize(lightPosition);
+        normal_v         = normalize(normal*modelNormalMatrix);
+        
+        highp vec4 pos_v = worldObjectMatrix*position;
+        lpos_v           = lightProjModelViewST*pos_v;
+        
+        position         = perspectiveMatrix*cameraViewMatrix*pos_v;
+    </code>
+</vertexShader>
+<fragmentShader zIndex="0">
+    
+    <uniforms>
+        <uniform prefix="highp" name="depthTexture"/>
+        
+    </uniforms>
+    
+    <code>
+        <![CDATA[
+        highp vec3  smcoord = lpos_v.xyz / lpos_v.w;
+        highp float  shadow = float(smcoord.z<=texture2D(depthTexture, smcoord.xy).x);
+        highp float fSurfaceShadow = 0.25 * shadow + 0.75;
+        
+        color = vec4(1.0,1.0,1.0,1.0)*fSurfaceShadow*max(0.0,dot(lightPosition_v,normal_v.xyz));
+        ]]>
+    </code>
+</fragmentShader>

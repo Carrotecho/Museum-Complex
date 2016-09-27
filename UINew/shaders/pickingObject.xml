@@ -1,0 +1,16 @@
+<vertexShader zIndex="5">
+    <uniforms>
+        <uniform prefix="highp" name="indexMesh"/>
+    </uniforms>
+    <varyings>
+        <varying prefix="highp" type="float" name="v_indexMesh"/>
+    </varyings>
+    <code>
+        v_indexMesh = indexMesh;
+    </code>
+</vertexShader>
+<fragmentShader zIndex="5">
+    <code>
+        color = vec4(v_indexMesh,0,0,0);
+    </code>
+</fragmentShader>

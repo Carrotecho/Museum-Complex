@@ -1,0 +1,27 @@
+<vertexShader zIndex="1">
+    <uniforms>
+        <uniform prefix="highp" name="lightPosition"/>
+        <uniform prefix="highp" name="modelNormalMatrix"/>
+    </uniforms>
+    <attributes>
+        <attribute prefix="highp" name="a_position" localVar="true"/>
+        <attribute prefix="highp" name="a_normal" localVar="true"/>
+    </attributes>
+    <varyings>
+        <varying prefix="highp" type="vec3" name="normal_v"/>
+        <varying prefix="highp" type="float" name="light_v"/>
+        <varying prefix="highp" type="vec3" name="lightPosition_v"/>
+        
+    </varyings>
+    <code>
+        lightPosition_v  = normalize(lightPosition);
+        normal_v         = normalize(normal*modelNormalMatrix);
+        light_v = max(0.0,dot(lightPosition_v,normal_v.xyz))+0.3;
+    </code>
+</vertexShader>
+<fragmentShader zIndex="1">
+    <code>
+        color = color*light_v;
+        
+    </code>
+</fragmentShader>

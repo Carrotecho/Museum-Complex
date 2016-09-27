@@ -1,0 +1,6 @@
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/YandexMapKit"
+LIBRARY_SEARCH_PATHS = "$(PODS_ROOT)/YandexMapKit"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/YandexMapKit"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"YandexMapKit" -l"sqlite3" -l"stdc++.6" -l"xml2" -l"z" -framework "AVFoundation" -framework "AudioToolbox" -framework "CoreData" -framework "CoreLocation" -framework "CoreTelephony" -framework "MessageUI" -framework "OpenAL" -framework "OpenGLES" -framework "QuartzCore" -framework "Security" -framework "SystemConfiguration"
+PODS_ROOT = ${SRCROOT}/Pods

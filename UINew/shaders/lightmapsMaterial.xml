@@ -1,0 +1,5 @@
+<fragmentShader zIndex="1">
+    <code>
+        color = vec4(color.x*0.5+0.5,color.y*0.5+0.5,color.z*0.5+0.5,1.0);
+    </code>
+</fragmentShader>

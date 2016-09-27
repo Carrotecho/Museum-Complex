@@ -1,0 +1,17 @@
+
+<fragmentShader zIndex="0">
+    <uniforms>
+        <uniform name="diffuseTexture"/>
+        <uniform name="normalMap"/>
+        <uniform prefix="highp" name="modelNormalMatrix"/>
+    </uniforms>
+    <attributes>
+        <attribute prefix="highp" name="a_textureCoordinats1" />
+    </attributes>
+    <localVars>
+        <localVar prefix="highp" type="vec3" name="normal_l"/>
+    </localVars>
+    <code>
+        normal_l = texture2D( normalMap, textureCoordinats1.xy ).xyz;
+    </code>
+</fragmentShader>

@@ -1,0 +1,370 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		518417276F16C9A141702BD0118E2C6D /* Pods-UINew-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EBA4FDB39F1179A2C069FC71EC9AA07 /* Pods-UINew-dummy.m */; };
+		56D9E854E6299B5FC17612D9C2C68B39 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 577AA9BC0EC34C71E579DBDA5B374EB1 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		043792C10FB5E56D9441D5FB2C76B70E /* YandexMapKit_iOS7.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; path = YandexMapKit_iOS7.bundle; sourceTree = "<group>"; };
+		0EBA4FDB39F1179A2C069FC71EC9AA07 /* Pods-UINew-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-UINew-dummy.m"; sourceTree = "<group>"; };
+		0EBF4F63A686AC9ABCC7AAAD41CBDA95 /* YandexMapKit.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; path = YandexMapKit.bundle; sourceTree = "<group>"; };
+		1C81C304ACCEDBDDADEC2ECC02918447 /* YMKLocationFetcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMKLocationFetcher.h; path = Headers/YMKLocationFetcher.h; sourceTree = "<group>"; };
+		2618590C7A0A5BE77AC8423E2D1C5367 /* YMKMapStructs.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMKMapStructs.h; path = Headers/YMKMapStructs.h; sourceTree = "<group>"; };
+		2E10D55098AF49F59EE0D75BCD0BAA72 /* YMKMapViewDelegate+Protocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "YMKMapViewDelegate+Protocol.h"; path = "Headers/YMKMapViewDelegate+Protocol.h"; sourceTree = "<group>"; };
+		2E1190131A9C3752C6A6D1F1D9445D36 /* libYandexMapKit.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = libYandexMapKit.a; sourceTree = "<group>"; };
+		335EBFAAE2C63476A13E6AF946797DD7 /* Pods-UINew-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-UINew-resources.sh"; sourceTree = "<group>"; };
+		352D1D48F6FD25261ADDC9F7FEEF6963 /* YMKPinAnnotationView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMKPinAnnotationView.h; path = Headers/YMKPinAnnotationView.h; sourceTree = "<group>"; };
+		35C2FF563C6DFB7FB3A9AE42D27ED458 /* YMKVersion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMKVersion.h; path = Headers/YMKVersion.h; sourceTree = "<group>"; };
+		45056F9B4617D42E387053A769AB1205 /* YMKTrafficInformer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMKTrafficInformer.h; path = Headers/YMKTrafficInformer.h; sourceTree = "<group>"; };
+		5632ED881646DF43ABB4B86B19394B14 /* YMKCalloutContentView-Protocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "YMKCalloutContentView-Protocol.h"; path = "Headers/YMKCalloutContentView-Protocol.h"; sourceTree = "<group>"; };
+		577AA9BC0EC34C71E579DBDA5B374EB1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		59173669831729C9FD56DFE2A0D1E68F /* YandexMapKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YandexMapKit.h; path = Headers/YandexMapKit.h; sourceTree = "<group>"; };
+		5DF718FB501D9EB3A4077B44A1528F1A /* libPods-UINew.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UINew.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		652337735C444536DF3AAE29208BF2ED /* Pods-UINew.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UINew.debug.xcconfig"; sourceTree = "<group>"; };
+		69E90E9235EC41D4583AE0723217DF54 /* YMKMapLayersConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMKMapLayersConfiguration.h; path = Headers/YMKMapLayersConfiguration.h; sourceTree = "<group>"; };
+		733AE8845436965BBB34978677871CA2 /* YMKMapView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMKMapView.h; path = Headers/YMKMapView.h; sourceTree = "<group>"; };
+		73A51FBD1A1890EECB4093BDA5B16B36 /* YMKUserLocation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMKUserLocation.h; path = Headers/YMKUserLocation.h; sourceTree = "<group>"; };
+		7844BF8B239A00D3C17DA3D1D989D0F5 /* YMKCalloutView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMKCalloutView.h; path = Headers/YMKCalloutView.h; sourceTree = "<group>"; };
+		78B9B9E01F0653996B0EFF0F7A9C699F /* YMKAnnotationImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMKAnnotationImage.h; path = Headers/YMKAnnotationImage.h; sourceTree = "<group>"; };
+		7AC531878847EFD57A864ACE64D54DD8 /* YMKGeoObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMKGeoObject.h; path = Headers/YMKGeoObject.h; sourceTree = "<group>"; };
+		9F93FF44127982382F11E643AB1C9345 /* YMKDraggablePinAnnotationViewDelegate+Protocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "YMKDraggablePinAnnotationViewDelegate+Protocol.h"; path = "Headers/YMKDraggablePinAnnotationViewDelegate+Protocol.h"; sourceTree = "<group>"; };
+		A4116C6E731A66EB5DA996F258E9637C /* YMKDraggableAnnotation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMKDraggableAnnotation.h; path = Headers/YMKDraggableAnnotation.h; sourceTree = "<group>"; };
+		A97744DF7A8A2934E01BD5E07DF92B52 /* YMKMapLayerInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMKMapLayerInfo.h; path = Headers/YMKMapLayerInfo.h; sourceTree = "<group>"; };
+		AAF09A3968424C29B8F2B95D9A5956D2 /* YMKConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMKConfiguration.h; path = Headers/YMKConfiguration.h; sourceTree = "<group>"; };
+		B1FE89027E334F17AFEC5D47EA8A60C5 /* YMKRuler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMKRuler.h; path = Headers/YMKRuler.h; sourceTree = "<group>"; };
+		B619AD980419E336408E150A6CE20E5D /* YMKAnnotation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMKAnnotation.h; path = Headers/YMKAnnotation.h; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BCC25DC4870A0C0C80725407AC9D6E8B /* NSValue+YMKMapCoordinate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSValue+YMKMapCoordinate.h"; path = "Headers/NSValue+YMKMapCoordinate.h"; sourceTree = "<group>"; };
+		BFFC5602713C1EFBF62494BC874737A3 /* Pods-UINew-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-UINew-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C15BD2865B479DA8871CC82C6EC3046F /* YMKMapImageBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMKMapImageBuilder.h; path = Headers/YMKMapImageBuilder.h; sourceTree = "<group>"; };
+		C42BBECFD92F66C784C474175631CDCD /* Pods-UINew.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UINew.release.xcconfig"; sourceTree = "<group>"; };
+		DE45F12E5C1CCDFEDECAA7F3FE851FC6 /* Pods-UINew-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UINew-acknowledgements.plist"; sourceTree = "<group>"; };
+		DF05AE6AFA53ACCF6EDD14642EEF55EA /* YMKConsoleLogging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMKConsoleLogging.h; path = Headers/YMKConsoleLogging.h; sourceTree = "<group>"; };
+		EA0D58D6410B7B9C75531C0092AA8B2A /* YMKDefaultCalloutView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMKDefaultCalloutView.h; path = Headers/YMKDefaultCalloutView.h; sourceTree = "<group>"; };
+		ED51EAEC13F7ADB8E84C446734E66E47 /* YMKAnnotationView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMKAnnotationView.h; path = Headers/YMKAnnotationView.h; sourceTree = "<group>"; };
+		F92AE18516519C6FF53D8C450CB3E5AF /* YMKDraggablePinAnnotationView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMKDraggablePinAnnotationView.h; path = Headers/YMKDraggablePinAnnotationView.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EADE7D949EFBB103C8CC02A813D894BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56D9E854E6299B5FC17612D9C2C68B39 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2F3A726C7ABEED89A852FC5963F1F5D4 /* YandexMapKit */ = {
+			isa = PBXGroup;
+			children = (
+				BCC25DC4870A0C0C80725407AC9D6E8B /* NSValue+YMKMapCoordinate.h */,
+				B619AD980419E336408E150A6CE20E5D /* YMKAnnotation.h */,
+				78B9B9E01F0653996B0EFF0F7A9C699F /* YMKAnnotationImage.h */,
+				ED51EAEC13F7ADB8E84C446734E66E47 /* YMKAnnotationView.h */,
+				5632ED881646DF43ABB4B86B19394B14 /* YMKCalloutContentView-Protocol.h */,
+				7844BF8B239A00D3C17DA3D1D989D0F5 /* YMKCalloutView.h */,
+				AAF09A3968424C29B8F2B95D9A5956D2 /* YMKConfiguration.h */,
+				DF05AE6AFA53ACCF6EDD14642EEF55EA /* YMKConsoleLogging.h */,
+				EA0D58D6410B7B9C75531C0092AA8B2A /* YMKDefaultCalloutView.h */,
+				A4116C6E731A66EB5DA996F258E9637C /* YMKDraggableAnnotation.h */,
+				F92AE18516519C6FF53D8C450CB3E5AF /* YMKDraggablePinAnnotationView.h */,
+				9F93FF44127982382F11E643AB1C9345 /* YMKDraggablePinAnnotationViewDelegate+Protocol.h */,
+				7AC531878847EFD57A864ACE64D54DD8 /* YMKGeoObject.h */,
+				1C81C304ACCEDBDDADEC2ECC02918447 /* YMKLocationFetcher.h */,
+				C15BD2865B479DA8871CC82C6EC3046F /* YMKMapImageBuilder.h */,
+				A97744DF7A8A2934E01BD5E07DF92B52 /* YMKMapLayerInfo.h */,
+				69E90E9235EC41D4583AE0723217DF54 /* YMKMapLayersConfiguration.h */,
+				2618590C7A0A5BE77AC8423E2D1C5367 /* YMKMapStructs.h */,
+				733AE8845436965BBB34978677871CA2 /* YMKMapView.h */,
+				2E10D55098AF49F59EE0D75BCD0BAA72 /* YMKMapViewDelegate+Protocol.h */,
+				352D1D48F6FD25261ADDC9F7FEEF6963 /* YMKPinAnnotationView.h */,
+				B1FE89027E334F17AFEC5D47EA8A60C5 /* YMKRuler.h */,
+				45056F9B4617D42E387053A769AB1205 /* YMKTrafficInformer.h */,
+				73A51FBD1A1890EECB4093BDA5B16B36 /* YMKUserLocation.h */,
+				35C2FF563C6DFB7FB3A9AE42D27ED458 /* YMKVersion.h */,
+				59173669831729C9FD56DFE2A0D1E68F /* YandexMapKit.h */,
+				DD31E083D28A6C86FDEB45BC173BDD53 /* Frameworks */,
+				35CCF87CC6E86797EA5921FDE0C8F0CB /* Resources */,
+			);
+			path = YandexMapKit;
+			sourceTree = "<group>";
+		};
+		35CCF87CC6E86797EA5921FDE0C8F0CB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0EBF4F63A686AC9ABCC7AAAD41CBDA95 /* YandexMapKit.bundle */,
+				043792C10FB5E56D9441D5FB2C76B70E /* YandexMapKit_iOS7.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		53F661C0CA7190D2CF05023FB33D61E4 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				577AA9BC0EC34C71E579DBDA5B374EB1 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				F2A33EA23D1A6F6864FD5619FDB91FBC /* Pods */,
+				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
+				9E65C7E3C76F20F0CFD7A4FEC7FB8719 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9E65C7E3C76F20F0CFD7A4FEC7FB8719 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F7BE9B4080B06EA184D24F5BA7C434CB /* Pods-UINew */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53F661C0CA7190D2CF05023FB33D61E4 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5DF718FB501D9EB3A4077B44A1528F1A /* libPods-UINew.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD31E083D28A6C86FDEB45BC173BDD53 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2E1190131A9C3752C6A6D1F1D9445D36 /* libYandexMapKit.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F2A33EA23D1A6F6864FD5619FDB91FBC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2F3A726C7ABEED89A852FC5963F1F5D4 /* YandexMapKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F7BE9B4080B06EA184D24F5BA7C434CB /* Pods-UINew */ = {
+			isa = PBXGroup;
+			children = (
+				BFFC5602713C1EFBF62494BC874737A3 /* Pods-UINew-acknowledgements.markdown */,
+				DE45F12E5C1CCDFEDECAA7F3FE851FC6 /* Pods-UINew-acknowledgements.plist */,
+				0EBA4FDB39F1179A2C069FC71EC9AA07 /* Pods-UINew-dummy.m */,
+				335EBFAAE2C63476A13E6AF946797DD7 /* Pods-UINew-resources.sh */,
+				652337735C444536DF3AAE29208BF2ED /* Pods-UINew.debug.xcconfig */,
+				C42BBECFD92F66C784C474175631CDCD /* Pods-UINew.release.xcconfig */,
+			);
+			name = "Pods-UINew";
+			path = "Target Support Files/Pods-UINew";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		26740809809DE24968A872A131116ABC /* Pods-UINew */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 209EAEE28CDF3BC31AD5CB6563E58FDF /* Build configuration list for PBXNativeTarget "Pods-UINew" */;
+			buildPhases = (
+				DF3753393251CE90784595F3AACB5B0D /* Sources */,
+				EADE7D949EFBB103C8CC02A813D894BE /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-UINew";
+			productName = "Pods-UINew";
+			productReference = 5DF718FB501D9EB3A4077B44A1528F1A /* libPods-UINew.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = CCA510CFBEA2D207524CDA0D73C3B561 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				26740809809DE24968A872A131116ABC /* Pods-UINew */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DF3753393251CE90784595F3AACB5B0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				518417276F16C9A141702BD0118E2C6D /* Pods-UINew-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		89218F6D0D9B6077EA534082A33041D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 652337735C444536DF3AAE29208BF2ED /* Pods-UINew.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		9EB645C612834738B99727720210C23E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		AE9AF05D72241A4952DA4925CE0BF4C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C42BBECFD92F66C784C474175631CDCD /* Pods-UINew.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		E39CD1E764776175CB82EEC82A6C9948 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		209EAEE28CDF3BC31AD5CB6563E58FDF /* Build configuration list for PBXNativeTarget "Pods-UINew" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89218F6D0D9B6077EA534082A33041D5 /* Debug */,
+				AE9AF05D72241A4952DA4925CE0BF4C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EB645C612834738B99727720210C23E /* Debug */,
+				E39CD1E764776175CB82EEC82A6C9948 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

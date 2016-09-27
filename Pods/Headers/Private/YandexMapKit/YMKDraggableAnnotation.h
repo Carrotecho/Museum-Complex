@@ -1,0 +1,1 @@
+../../../YandexMapKit/Headers/YMKDraggableAnnotation.h

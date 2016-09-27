@@ -1,0 +1,46 @@
+<vertexShader zIndex="1">
+    <uniforms>
+        <uniform prefix="highp" name="worldObjectMatrix"/>
+        <uniform prefix="highp" name="lightProjModelViewST"/>
+        <uniform prefix="highp" name="modelNormalMatrix"/>
+        <uniform prefix="highp" name="lightPosition"/>
+    </uniforms>
+    <attributes>
+        <attribute prefix="highp" name="a_position" localVar="true"/>
+        <attribute prefix="highp" name="a_normal" localVar="true"/>
+    </attributes>
+    <varyings>
+        <varying prefix="highp" type="float" name="bias_v"/>
+        <varying prefix="highp" type="vec3" name="smcoord"/>
+        <varying prefix="highp" type="vec3" name="normal_v"/>
+        <varying prefix="highp" type="vec3" name="lightPosition_v"/>
+    </varyings>
+    <localVars>
+        <localVar prefix="highp" type="vec4" name="possworld" code="worldObjectMatrix*position;"/>
+    </localVars>
+    <code>
+        lightPosition_v    = normalize(lightPosition);
+        highp vec4 lpos_v  = lightProjModelViewST*possworld;
+        smcoord            = lpos_v.xyz / lpos_v.w;
+        smcoord.z-=0.001;
+        normal_v           = normalize(normal*modelNormalMatrix);
+    </code>
+</vertexShader>
+<fragmentShader zIndex="0">
+    <uniforms>
+        <uniform prefix="highp" name="depthTexture"/>
+    </uniforms>
+    <functions>
+        
+        
+    </functions>
+    <code>
+        <![CDATA[
+            highp float visibility = 1.0;
+            if ( texture2D( depthTexture, smcoord.xy ).x  <  smcoord.z){
+                visibility = 0.8;
+            }
+            color = color*visibility;
+            ]]>
+    </code>
+</fragmentShader>

@@ -1,0 +1,14 @@
+<fragmentShader zIndex="0">
+    <uniforms>
+        <uniform name="specularMap"/>
+    </uniforms>
+    <attributes>
+        <attribute prefix="highp" name="a_textureCoordinats1" />
+    </attributes>
+    <localVars>
+        <localVar prefix="highp" type="vec3" name="specular_l"/>
+    </localVars>
+    <code>
+        specular_l = texture2D( specularMap, textureCoordinats1.xy ).xyz;
+    </code>
+</fragmentShader>

@@ -1,0 +1,11 @@
+<vertexShader zIndex="10">
+    <uniforms>
+        <uniform prefix="highp" name="projCameraModelView"/>
+    </uniforms>
+    <attributes>
+        <attribute prefix="highp" name="a_position" localVar="true"/>
+    </attributes>
+    <code>
+        position           = projCameraModelView*position;
+    </code>
+</vertexShader>

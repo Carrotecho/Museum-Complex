@@ -1,0 +1,20 @@
+<vertexShader zIndex="5">
+    <attributes>
+        <attribute prefix="highp" name="a_textureCoordinats1" />
+        <attribute prefix="highp" name="a_normal" localVar="true"/>
+    </attributes>
+    <varyings>
+        <varying prefix="highp" type="vec2" name="textureCoordinats1"/>
+    </varyings>
+    <code>
+        textureCoordinats1 = a_textureCoordinats1;
+    </code>
+</vertexShader>
+<fragmentShader zIndex="0">
+    <uniforms>
+        <uniform name="diffuseTexture"/>
+    </uniforms>
+    <code>
+        color = texture2D( diffuseTexture, textureCoordinats1.xy );
+    </code>
+</fragmentShader>

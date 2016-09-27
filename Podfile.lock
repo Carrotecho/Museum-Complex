@@ -1,0 +1,10 @@
+PODS:
+  - YandexMapKit (1.0.10)
+
+DEPENDENCIES:
+  - YandexMapKit
+
+SPEC CHECKSUMS:
+  YandexMapKit: 894e5d5dc4dce6ed14b32b0cd6b8066ed2057484
+
+COCOAPODS: 0.38.2

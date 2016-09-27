@@ -1,0 +1,13 @@
+<vertexShader zIndex="9">
+    <varyings>
+        <varying prefix="highp" type="float" name="positiony"/>
+    </varyings>
+    <code>
+        positiony = position.y;
+    </code>
+</vertexShader>
+<fragmentShader zIndex="0">
+    <code>
+        if (positiony<0.0) discard;
+    </code>
+</fragmentShader>

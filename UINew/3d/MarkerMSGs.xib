@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view userInteractionEnabled="NO" contentMode="scaleToFill" id="iN0-l3-epB" customClass="MarkerMSGs">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="move-device-on-marker.png" translatesAutoresizingMaskIntoConstraints="NO" id="6XN-Lx-kv1">
+                    <rect key="frame" x="101" y="308" width="567" height="408"/>
+                    <animations/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ok-button-small.png" translatesAutoresizingMaskIntoConstraints="NO" id="SSh-vA-JY3">
+                    <rect key="frame" x="611" y="288" width="73" height="73"/>
+                    <animations/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="markerWrongBG.png" translatesAutoresizingMaskIntoConstraints="NO" id="FYe-sm-2I0">
+                    <rect key="frame" x="82" y="302" width="604" height="419"/>
+                    <animations/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ok-button-big.png" translatesAutoresizingMaskIntoConstraints="NO" id="It4-fJ-kc4">
+                    <rect key="frame" x="622" y="268" width="93" height="93"/>
+                    <animations/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bEX-qK-OMu">
+                    <rect key="frame" x="133" y="365" width="502" height="294"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="5hb-eN-0H2">
+                    <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="xam-ze-bw3">
+                            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ZLW-sq-OEa">
+                                    <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="marker-success.png" translatesAutoresizingMaskIntoConstraints="NO" id="lYh-vG-Z7Y">
+                                            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                            <animations/>
+                                        </imageView>
+                                    </subviews>
+                                    <animations/>
+                                </stackView>
+                            </subviews>
+                            <animations/>
+                        </stackView>
+                    </subviews>
+                    <animations/>
+                </stackView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+            <connections>
+                <outlet property="markerMSGBG" destination="FYe-sm-2I0" id="aE2-ms-t9w"/>
+                <outlet property="markerMSGOK" destination="It4-fJ-kc4" id="ism-EW-bTS"/>
+                <outlet property="markerMSGText" destination="bEX-qK-OMu" id="W2b-7j-tW3"/>
+                <outlet property="moveDeviceBG" destination="6XN-Lx-kv1" id="3eK-Dw-lhQ"/>
+                <outlet property="moveDeviceOK" destination="SSh-vA-JY3" id="w4s-kc-NOj"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="marker-success.png" width="768" height="1024"/>
+        <image name="markerWrongBG.png" width="604" height="419"/>
+        <image name="move-device-on-marker.png" width="567" height="408"/>
+        <image name="ok-button-big.png" width="187" height="187"/>
+        <image name="ok-button-small.png" width="73" height="72"/>
+    </resources>
+</document>

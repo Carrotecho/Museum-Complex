@@ -1,0 +1,11 @@
+<vertexShader zIndex="8">
+    <uniforms>
+        <uniform prefix="highp" name="worldObjectMatrix"/>
+    </uniforms>
+    <attributes>
+        <attribute prefix="highp" name="a_position" localVar="true"/>
+    </attributes>
+    <code>
+        position = worldObjectMatrix*position;
+    </code>
+</vertexShader>
